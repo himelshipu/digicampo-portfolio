@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero h3 {
 
 }
-.hero .btn-get-started {
+.btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #86619C;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #209dd8;
 }
 .hero .btn-watch-video {
@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero .hero-img img {
     width: 80%;
   }
-  .hero .btn-get-started {
+ .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
@@ -1146,19 +1146,15 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing .row {
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 .pricing .box {
   padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-  background: #fff;
   height: 100%;
-  border-top: 4px solid #fff;
-  border-radius: 5px;
+  background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
 }
 .pricing h3 {
   font-weight: 500;
-  margin-bottom: 15px;
   font-size: 20px;
   color: #37517e;
 }
@@ -1187,13 +1183,14 @@ section {
 .pricing ul li {
   padding: 10px 0 10px 30px;
   position: relative;
+  color: #ffff;
 }
 .pricing ul i {
-  color: #28a745;
-  font-size: 24px;
+  color: black;
+  font-size: 15px;
   position: absolute;
-  left: 0;
-  top: 6px;
+  left: 13px;
+  top: 13px;
 }
 .pricing ul .na {
   color: #ccc;
@@ -1232,13 +1229,13 @@ section {
 }
 @media (max-width: 992px) {
   .pricing .box {
-    max-width: 60%;
+    max-width: 100%;
     margin: 0 auto 30px auto;
   }
 }
 @media (max-width: 767px) {
   .pricing .box {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto 30px auto;
   }
 }
@@ -1744,4 +1741,21 @@ section {
 /*}*/
 .page-banner h1{
 
+}
+.top-box{
+  background: #E4E4E4;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #2F0D53;
+  padding: 10px;
+  text-align: center;
+ }
+.description{
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: 'Open Sans';
+  padding-bottom: 20px;
 }
