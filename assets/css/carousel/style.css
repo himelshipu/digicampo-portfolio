@@ -239,4 +239,18 @@ img {
 .work-wrap .img {
   height: 352px; }
 
+#hero .owl-carousel .owl-nav {
+  bottom:40%;
+  left: 3%;
+  right: unset;
+  top: unset;
+}
+.owl-carousel .owl-nav .owl-prev p span, .owl-carousel .owl-nav .owl-prev p small,
+.owl-carousel .owl-nav .owl-next p span{
+  color: white;
+  background: unset;
+}
 
+#hero .owl-carousel .owl-dots .owl-dot{
+  display: none;
+}
