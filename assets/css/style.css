@@ -1740,6 +1740,21 @@ section {
 /*  position: absolute;*/
 /*  bottom: 20px;*/
 /*}*/
+
+.faq-guide{
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+.faq ul {
+  list-style-image: url('/assets/img/vector2.png');
+}
+.faq h6{
+  margin: 10px 0 20px 0;
+}
 .page-banner h1{
 
 }
