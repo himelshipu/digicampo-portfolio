@@ -1777,3 +1777,11 @@ section {
 .bg-transparent-black{
   background: linear-gradient(89.87deg, rgba(43, 43, 43, 0.84) 0.11%, rgba(43, 43, 43, 0) 98.42%)!important;
 }
+.text-justify{
+  text-align: justify!important;
+}
+
+.icon-background{
+  background: url('/assets/img/Ellipse15.png');
+  background-repeat: no-repeat;
+}
