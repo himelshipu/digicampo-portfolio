@@ -8287,3 +8287,19 @@ h1, h2, h3, h4, h5,
       letter-spacing: 1px;
       display: inline-block;
       margin-bottom: 5px; }
+
+
+.eguides .work .img:after {
+  background: unset;
+}
+
+.eguide-title:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  z-index: -1;
+  height: 30%;
+  background: rgba(134, 97, 156, 0.66);
+}
