@@ -3,7 +3,7 @@
   background: #ffff;
   border: 1px solid #ffff;
   border-radius: 30px;
-  /*padding: 10px;*/
+  padding: 10px;
 }
 
 
@@ -1532,7 +1532,7 @@ section {
 /*  font-size: 14px;*/
 /*}*/
 #footer{
-  background: url(/assets/img/footer-img.png);
+  background: url(../img/footer-img.png);
   padding-top: 60px;
   background-size: cover;
   background-position-x: center;
@@ -1717,7 +1717,7 @@ section {
     line-height: 30px;
   }
   #footer{
-    background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
+    background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%)!important;
   }
 
 }
@@ -1733,7 +1733,7 @@ section {
   background: url(../img/service-banner.png) center no-repeat;
   background-size: cover;
   color: #ffffff;
-  text-align: center;
+  /*text-align: center;*/
   /*position: relative;*/
 }
 /*.sub_div {*/
@@ -1803,4 +1803,19 @@ section {
 .contact-hero{
   background: linear-gradient(rgba(43, 43, 43, 0.59), rgba(43, 43, 43, 0.59)), url(../img/contact-1.png) fixed  center;
   background-size: cover;
+}
+ .category-name{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 19.1527px;
+   line-height: 30px;
+   letter-spacing: 0.04em;
+   color: #2B2B2B;
+   display: block;
+   padding-bottom: 3px;
+}
+.right-mini{
+  border-bottom: 1px solid #58595B;
+  padding: 10px 0 20px 0;
 }
