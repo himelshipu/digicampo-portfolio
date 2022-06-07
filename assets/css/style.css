@@ -1382,11 +1382,11 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  /*border-top: 3px solid #47b2e4;*/
+  /*border-bottom: 3px solid #47b2e4;*/
   padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  /*background: #fff;*/
+  /*box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);*/
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
@@ -1457,15 +1457,15 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #47b2e4;
+  background: #7396BC;
   border: 0;
-  padding: 12px 34px;
+  padding: 5px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #7396BD;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1799,4 +1799,8 @@ section {
 .icon-background{
   background: url('/assets/img/Ellipse15.png');
   background-repeat: no-repeat;
+}
+.contact-hero{
+  background: linear-gradient(rgba(43, 43, 43, 0.59), rgba(43, 43, 43, 0.59)), url(../img/contact-1.png) fixed  center;
+  background-size: cover;
 }
