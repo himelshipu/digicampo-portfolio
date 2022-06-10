@@ -543,14 +543,14 @@ section {
 }
 .tag{
   background: linear-gradient(180deg, #7396BC -31.71%, #86619C 139.02%);
-  border: 1px solid #37517e;
+  border: 1px solid;
   border-radius: 19px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 3px 8px 3px 8px;
+  padding: 0px 8px 0px 8px;
   margin-bottom: 10px;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 15px;
+  line-height: 28px;
   display: inline-block;
 }
 
@@ -1818,4 +1818,80 @@ section {
 .right-mini{
   border-bottom: 1px solid #58595B;
   padding: 10px 0 20px 0;
+  margin-bottom: 15px;
+}
+
+
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+}
+
+input.nosubmit {
+  display: block;
+  padding: 3px 5px 3px 5px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 95% center;
+}
+.right .twitter{
+  color: #58595B;
+  font-size: 20px;
+}
+
+.social-feed h5{
+  letter-spacing: 0.04em;
+  color: #2B2B2B;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: unset;
+}
+.box-headline {
+  background: #E4E4E4;
+}
+.box-headline h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: #2F0D53;
+}
+
+.email-button{
+  width: 170px;
+}
+
+.email-icon{
+  width: 40%;
+  height: 47px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  color: #86619C;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 19px;
+  position: relative;
+  left: 15px;
+}
+
+
+.email-text{
+  width: 90%;
+  height: 45px;
+  background: #86619C;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 0 19px 19px 0;
+  font-size: 15px;
 }
