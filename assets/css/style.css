@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
+  /*margin: 15px;*/
   color: #37517e;
 }
 .navbar-mobile .dropdown ul {
@@ -353,20 +353,21 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 72px;
 }
 .hero h1 {
-  margin: 0 0 10px 0;
+  /*margin: 0 0 10px 0;*/
   /*font-size: 48px;*/
   /*font-weight: 700;*/
   /*line-height: 56px;*/
   /*color: #fff;*/
 
-  font-family: 'popins';
+  font-family: 'sans-serif';
   font-style: normal;
   font-weight: 300;
-  font-size: 42px;
-  line-height: 57px;
-  letter-spacing: 0.09em;
+  font-size: 38px;
+  /*line-height: 57px;*/
+  letter-spacing: 0.05em;
   color: #2F0D53;
 }
+
 .hero h2 {
   /*color: rgba(255, 255, 255, 0.6);*/
   /*margin-bottom: 50px;*/
@@ -375,15 +376,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
-  font-size: 54px;
-  line-height: 87px;
+  font-size: 52px;
+  /*line-height: 87px;*/
   letter-spacing: 0.09em;
   color: #2F0D53;
 }
 
-.hero h3 {
 
-}
 .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -423,9 +422,20 @@ h1, h2, h3, h4, h5, h6 {
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+
+}
+
 @media (max-width: 991px) {
   .hero {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
   }
   .hero .animated {
@@ -441,13 +451,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 20px;
   }
   .hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    /*line-height: 24px;*/
+    /*margin-bottom: 30px;*/
   }
   .hero .hero-img img {
     width: 70%;
