@@ -284,7 +284,15 @@ img {
     left: -15px;
   }
 
+  .team .owl-carousel .owl-nav .owl-next {
+    left: 88%;
+  }
+
   .page-banner .owl-carousel .owl-nav .owl-next {
     right: -60px;
   }
+  .homepage-blogs .owl-carousel .owl-nav .owl-prev, .homepage-services .owl-carousel .owl-nav .owl-prev{
+    left: unset;
+  }
 }
+
