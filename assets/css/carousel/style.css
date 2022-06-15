@@ -256,10 +256,10 @@ img {
 }
 
 .team .owl-carousel .owl-nav .owl-prev {
-  right: unset;
+  right: 95%;
 }
 .team .owl-carousel .owl-nav .owl-next {
-  left: 46%;
+  left: 44%;
 }
 
 .homepage-blogs .owl-carousel .owl-nav .owl-prev, .homepage-services .owl-carousel .owl-nav .owl-prev{
