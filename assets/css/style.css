@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo {
     font-size: 30px;
     margin: 0;
-    padding: 0;
+    padding-left: 5px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 2px;
@@ -164,16 +164,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar li {
     position: relative;
+    margin-right: 40px;
 }
+
 
 .navbar a, .navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 25px 0 0;
-    font-size: 15px;
+    /*margin: 0 25px 0 0;*/
+    font-size: 16px;
     font-weight: 500;
-    /*color: #fff;*/
     color: rgba(43, 43, 43, 0.95);
     white-space: nowrap;
     transition: 0.3s;
@@ -185,21 +186,36 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+/*.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
     color: #47b2e4;
     border-bottom: 3px solid #7396BC;
-}
+}*/
 
 .navbar .getstarted, .navbar .getstarted:focus {
     padding: 5px 20px;
-    /*margin-left: 30px;*/
     border-radius: 50px;
-    /*color: #fff;*/
     color: rgba(43, 43, 43, 0.95);
     font-size: 14px;
     border: 2px solid #2F0D53;
     font-weight: 600;
 }
+
+.navbar .contact{
+    border-radius: 50px;
+    color: rgba(43, 43, 43, 0.95);
+    border: 2px solid #2F0D53;
+    font-weight: 600;
+}
+
+.navbar .contact:hover{
+    font-weight: 600;
+    background: #2F0D53;
+}
+
+.navbar .contact:hover span{
+    color: #FFFFFF;
+}
+
 
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
     color: white;
@@ -244,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
     color: rgba(43, 43, 43, 0.95);
-    border-bottom: 1px solid #7396BC;
+    /*border-bottom: 1px solid #7396BC;*/
 }
 
 .navbar .dropdown:hover > ul {
@@ -398,27 +414,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero h1 {
-    /*margin: 0 0 10px 0;*/
-    /*font-size: 48px;*/
-    /*font-weight: 700;*/
-    /*line-height: 56px;*/
-    /*color: #fff;*/
-
-    font-family: 'sans-serif';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
-    /*line-height: 57px;*/
-    letter-spacing: 0.05em;
+    font-size: 42px;
+    letter-spacing: 0.09em;
     color: #2F0D53;
 }
 
 .hero h2 {
-    /*color: rgba(255, 255, 255, 0.6);*/
-    /*margin-bottom: 50px;*/
-    /*font-size: 24px;*/
-
-    font-family: 'Poppins';
+    font-family: poppins, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 52px;
@@ -550,13 +555,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faded-title h2 {
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.13em;
     color: #E4E4E4;
-    font-family: Poppins;
-    font-size: 9rem;
-    line-height: .8;
+
+    font-size:164px;
+    line-height: .7;
+
     text-align: center;
     padding-bottom: 30px;
-    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     position: relative;
@@ -580,15 +589,17 @@ section {
 
 .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 
 .section-title h2 {
-    font-size: 30px;
-    font-weight: bold;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+
     /*text-transform: uppercase;*/
     margin-bottom: 20px;
-    padding-bottom: 10px;
     position: relative;
     color: #2F0D53;
 }
@@ -607,25 +618,53 @@ section {
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
-    height: 3px;
-    background: #47b2e4;
+    width: 96px;
+    height: 4px;
+    background: #7396BC;
     bottom: 0;
-    left: calc(50% - 20px);
+    /* left: calc(50% - 20px); */
+    right: calc(52%);
 }
-
+.homepage-blogs h3{
+    font-size:42px;
+}
 .tag {
     background: linear-gradient(180deg, #7396BC -31.71%, #86619C 139.02%);
     border: 1px solid;
     border-radius: 19px;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 0px 8px 0px 8px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 28px;
     display: inline-block;
+    padding: 6px 10px 6px 13px;
+    font-family: poppins, sans-serif;
 }
+@media (max-width: 992px) {
+    .tag{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .section-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 46px;
+        height: 4px;
+        background: #7396BC;
+        bottom: 0;
+        right: calc(52%);
+    }
+
+    .homepage-blogs h3{
+        font-size: 25px;
+    }
+
+
+}
+
+
 
 /*.blogs .section-title h2::after {*/
 /*  content: "";*/
@@ -850,6 +889,7 @@ section {
 }
 
 @media (max-width: 1024px) {
+
     .why-us .content, .why-us .accordion-list {
         padding-left: 0;
         padding-right: 0;
@@ -860,6 +900,8 @@ section {
     /*.img {*/
     /*    min-height: 400px;*/
     /*}*/
+
+
 
     .why-us .content {
         padding-top: 30px;
@@ -943,12 +985,12 @@ section {
 # Services
 --------------------------------------------------------------*/
 .audit .section-title h2 {
-    font-family: 'Poppins';
+    font-family: poppins, sans-serif;
     font-style: normal;
     letter-spacing: 0.03em;
     font-weight: 400 !important;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 51px;
+    line-height: 76px;
 }
 
 .audit .section-title {
@@ -1851,17 +1893,24 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
+
+    margin-bottom: 0;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 0;
-    font-family: "Poppins", sans-serif;
-    color: #5e5e5e;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #2B2B2B;
 }
 
 #footer .footer-top h4 {
-    font-family: 'Poppins';
-    font-size: 22px;
-    font-weight: bold;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+
     color: #ffffff;
     position: relative;
     padding-bottom: 12px;
@@ -1895,6 +1944,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
+    font-family: poppins, sans-serif;
     color: #ffffff;
     transition: 0.3s;
     display: inline-block;
@@ -2072,7 +2122,7 @@ section {
 }
 
 .text-deep-purple {
-    color: #2F0D53 !important;
+    color: #2F0D53!important;
 }
 
 .bg-transparent-black {
@@ -2195,7 +2245,7 @@ input.nosubmit {
 
     .section-title h2 {
         font-size: 25px;
-        margin-bottom: unset;
+        margin-bottom: 10px;
     }
 
     .page-banner h1 {
@@ -2229,4 +2279,62 @@ input.nosubmit {
 .borderless-title .section-title h2, .contactV2 .section-title h2 {
     padding-bottom: unset;
     margin-bottom: 5px;
+}
+
+#header .navbar a:after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 100%;
+    border-bottom: solid 3px #7396BC;
+    transition: left 250ms ease-in-out,right 250ms ease-in-out;
+    opacity: 0;
+}
+#header .navbar a:hover:after {
+    opacity: 1;
+}
+
+
+#header .navbar .contact a:after {
+    content: none!important;
+}
+
+#header .navbar .contact:hover:after {
+    content: none!important;
+}
+
+@media (min-width: 1024px) {
+    #header  .nav-link {
+        padding: unset;
+    }
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif!important;
+}
+.poppins{
+    font-family: poppins, sans-serif!important;
+}
+.libre{
+    font-family: 'Libre Caslon Text', serif!important;
+}
+ .paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+    .faded-title h2 {
+        font-size: 120px;
+    }
+
+    }
+
+@media screen and (max-width: 991.99px) and (min-width: 768px) {
+    .faded-title h2 {
+        font-size: 90px;
+    }
+
 }
