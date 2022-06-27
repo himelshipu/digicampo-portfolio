@@ -627,6 +627,7 @@ section {
 }
 .homepage-blogs h3{
     font-size:42px;
+    font-weight: 600;
 }
 .tag {
     background: linear-gradient(180deg, #7396BC -31.71%, #86619C 139.02%);
@@ -2237,12 +2238,16 @@ input.nosubmit {
     border-radius: 0 19px 19px 0;
     font-size: 15px;
 }
-
+.why-us-slogan{
+    font-size: 47px;
+}
 @media (max-width: 768px) {
     .navbar .getstarted, .navbar .getstarted:focus {
         border: unset;
     }
-
+    .why-us-slogan{
+        font-size: 25px;
+    }
     .section-title h2 {
         font-size: 25px;
         margin-bottom: 10px;
@@ -2324,6 +2329,27 @@ input.nosubmit {
     letter-spacing: 0.04em;
 
 }
+
+
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+ .fw-600{
+     font-weight: 600;
+ }
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-900{
+     font-weight: 600;
+ }
+
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
     .faded-title h2 {
