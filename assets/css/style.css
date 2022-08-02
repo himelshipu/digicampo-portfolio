@@ -10,12 +10,25 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@900&display=swap');
+
+@font-face {
+    font-family: 'poppinsextrabold';
+    src: url('/assets/fonts/poppins-extrabold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/poppins-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 * {
-    font-family: "Poppins", sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #444444;
 }
 
@@ -30,9 +43,12 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif
+    /*font-family: 'poppinsextrabold';*/
 }
 
+.libre-caslon{
+    font-family: 'Libre Caslon Text'!important;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -175,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
     /*margin: 0 25px 0 0;*/
     font-size: 16px;
     font-weight: 500;
+    /*color: #2B2B2B;*/
     color: rgba(43, 43, 43, 0.95);
     white-space: nowrap;
     transition: 0.3s;
@@ -444,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero h2 {
-    font-family: poppins, sans-serif;
+    font-family: 'poppinsextrabold';
     font-style: normal;
     font-weight: 800;
     font-size: 52px;
@@ -453,14 +470,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #2F0D53;
 }
 
-
 .btn-get-started {
-    font-family: "Poppins", sans-serif;
+    font-family: 'poppinsextrabold';
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 5px 28px 5px 28px;
+    padding:8px 45px 8px 45px;
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px 0 0 0;
@@ -576,19 +592,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faded-title h2 {
-    font-family: poppins, sans-serif;
+    font-family: 'poppinsextrabold';
     font-style: normal;
     font-weight: 900;
     letter-spacing: 0.13em;
     color: #E4E4E4;
-
     font-size:164px;
-    line-height: .7;
-
-    text-align: center;
+/*    line-height: .7;
     padding-bottom: 30px;
+    margin-bottom: 20px;*/
+    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
     position: relative;
 }
 
@@ -614,7 +628,8 @@ section {
 }
 
 .section-title h2 {
-    font-family: poppins, sans-serif;
+    /*font-family: poppins, sans-serif;*/
+    font-family: 'poppinsextrabold';
     font-style: normal;
     font-weight: 700;
     font-size: 51px;
@@ -647,6 +662,7 @@ section {
 .homepage-blogs h3{
     font-size:42px;
     font-weight: 600;
+    color: #2F0D53;
 }
 .tag {
     background: linear-gradient(180deg, #7396BC -31.71%, #86619C 139.02%);
@@ -1839,7 +1855,7 @@ section {
     background-position-x: center;
 }
 #footer .logo img{
-    max-width: 120px;
+    max-width: 180px;
 }
 
 #footer ul li a {
@@ -2041,8 +2057,8 @@ section {
 
 @media (max-width: 992px) {
     .faded-title h2 {
-        font-size: 3rem;
-        line-height: .6;
+        /*font-size: 3rem;*/
+        /*line-height: .6;*/
         padding-bottom: 10px;
         margin-bottom: 10px;
         margin-top: 5px;
@@ -2385,5 +2401,10 @@ input.nosubmit {
     .faded-title h2 {
         font-size: 90px;
     }
+}
+    @media screen and (max-width: 767.99px) {
+        .faded-title h2 {
+            font-size: 36px;
+        }
 
 }
