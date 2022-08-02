@@ -11,15 +11,22 @@
 # General
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@900&display=swap');*/
+
+/*@font-face {*/
+/*    font-family: 'poppinsextrabold';*/
+/*    src: url('/assets/fonts/poppins-extrabold-webfont.woff2') format('woff2'),*/
+/*    url('/assets/fonts/poppins-extrabold-webfont.woff') format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
 
 @font-face {
     font-family: 'poppinsextrabold';
-    src: url('/assets/fonts/poppins-extrabold-webfont.woff2') format('woff2'),
-    url('/assets/fonts/poppins-extrabold-webfont.woff') format('woff');
+    src: url('/assets/fonts/poppins-black-webfont.woff2') format('woff2'),
+    url('/assets/fonts/poppins-black-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -455,13 +462,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: 0.09em;
     color: #2F0D53;
 }
 
 .hero h2 {
-    font-family: 'poppinsextrabold';
+    /*font-family: 'poppinsextrabold';*/
     font-style: normal;
     font-weight: 800;
     font-size: 52px;
@@ -471,8 +478,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-get-started {
-    font-family: 'poppinsextrabold';
-    font-weight: 500;
+    /*font-family: 'poppinsextrabold';*/
+    /*font-family: 'poppinsblack';*/
+    font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
@@ -592,11 +600,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faded-title h2 {
-    font-family: 'poppinsextrabold';
+    /*font-family: 'poppinsextrabold';*/
     font-style: normal;
     font-weight: 900;
     letter-spacing: 0.13em;
-    color: #E4E4E4;
+    color: #EAECEB;
     font-size:164px;
 /*    line-height: .7;
     padding-bottom: 30px;
@@ -629,9 +637,9 @@ section {
 
 .section-title h2 {
     /*font-family: poppins, sans-serif;*/
-    font-family: 'poppinsextrabold';
+    /*font-family: 'poppinsextrabold';*/
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 51px;
     margin-bottom: 20px;
     position: relative;
@@ -657,7 +665,7 @@ section {
     height: 4px;
     background: #7396BC;
     bottom: -5px;
-    right: calc(56%);
+    right: calc(33%);
 }
 .homepage-blogs h3{
     font-size:42px;
@@ -782,6 +790,9 @@ section {
     margin-bottom: 0;
 }
 
+.btn-learn-more{
+    color: #7396BC;
+}
 .about .content .btn-learn-more {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
