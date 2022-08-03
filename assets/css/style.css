@@ -462,8 +462,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    letter-spacing: 0.09em;
+    font-size: 38px;
+    letter-spacing: 0.08em;
     color: #2F0D53;
 }
 
@@ -598,7 +598,9 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateY(-10px);
     }
 }
-
+.faded-title{
+    margin-bottom: 85px;
+}
 .faded-title h2 {
     /*font-family: 'poppinsextrabold';*/
     font-style: normal;
@@ -606,8 +608,8 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.13em;
     color: #EAECEB;
     font-size:164px;
-/*    line-height: .7;
-    padding-bottom: 30px;
+    line-height: .9;
+/*   padding-bottom: 30px;
     margin-bottom: 20px;*/
     text-align: center;
     text-transform: uppercase;
@@ -632,7 +634,7 @@ section {
 
 .section-title {
     text-align: center;
-    /*padding-bottom: 30px;*/
+
 }
 
 .section-title h2 {
@@ -665,10 +667,10 @@ section {
     height: 4px;
     background: #7396BC;
     bottom: -5px;
-    right: calc(33%);
+    right: calc(25%);
 }
 .homepage-blogs h3{
-    font-size:42px;
+    font-size:24px;
     font-weight: 600;
     color: #2F0D53;
 }
@@ -679,10 +681,10 @@ section {
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 22px;
     display: inline-block;
-    padding: 6px 10px 6px 13px;
+    padding: 6px 15px 6px 15px;
     font-family: poppins, sans-serif;
 }
 @media (max-width: 767.99px) {
@@ -694,35 +696,9 @@ section {
         height: 4px;
         background: #7396BC;
         bottom: -5px;
-        right: calc(54%);
+        right: calc(10%);
     }
 }
-
-@media (max-width: 992px) {
-    .tag{
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .section-title h2::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 46px;
-        height: 4px;
-        background: #7396BC;
-        bottom: -5px;
-        right: calc(52%);
-    }
-
-
-
-    .homepage-blogs h3{
-        font-size: 25px;
-    }
-
-
-}
-
 
 .section-title p {
     margin-bottom: 0;
@@ -940,28 +916,15 @@ section {
 }
 
 @media (max-width: 1024px) {
-
+    .cta {
+        background-attachment: scroll;
+    }
     .why-us .content, .why-us .accordion-list {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media (max-width: 992px) {
-    /*.img {*/
-    /*    min-height: 400px;*/
-    /*}*/
-
-
-
-    .why-us .content {
-        padding-top: 30px;
-    }
-
-    .why-us .accordion-list {
-        padding-bottom: 30px;
-    }
-}
 
 @media (max-width: 575px) {
     .img {
@@ -1035,6 +998,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .audit .section-title h2 {
     font-family: poppins, sans-serif;
     font-style: normal;
@@ -1042,10 +1006,12 @@ section {
     font-weight: 400 !important;
     font-size: 51px;
     line-height: 76px;
+    margin-top: 45px;
 }
 
 .audit .section-title {
     padding-bottom: unset !important;
+
 }
 
 .audit .pricing .buy-btn {
@@ -1139,12 +1105,6 @@ section {
 .cta .cta-btn:hover {
     background: #47b2e4;
     border: 2px solid #47b2e4;
-}
-
-@media (max-width: 1024px) {
-    .cta {
-        background-attachment: scroll;
-    }
 }
 
 @media (min-width: 769px) {
@@ -1508,12 +1468,6 @@ section {
     background: #23a3df;
 }
 
-@media (max-width: 992px) {
-    .pricing .box {
-        max-width: 100%;
-        margin: 0 auto 30px auto;
-    }
-}
 
 @media (max-width: 767px) {
     .pricing .box {
@@ -1816,12 +1770,6 @@ section {
     margin-top: 72px;
 }
 
-@media (max-width: 992px) {
-    .breadcrumbs {
-        margin-top: 68px;
-    }
-}
-
 .breadcrumbs h2 {
     font-size: 28px;
     font-weight: 600;
@@ -1936,7 +1884,7 @@ section {
 
 #footer .footer-top .footer-contact h3 {
     margin: 10px 0 10px 0;
-    padding: 5px 0 2px 0;
+    padding: 5px 0 10px 0;
     line-height: 1;
     text-transform: uppercase;
     font-weight: 600;
@@ -1979,9 +1927,11 @@ section {
 
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #47b2e4;
+    /*color: #47b2e4;*/
     font-size: 18px;
     line-height: 1;
+    display: inline-flex;
+    margin-right: 15px;
 }
 
 #footer .footer-top .footer-links ul li {
@@ -2067,9 +2017,47 @@ section {
 }
 
 @media (max-width: 992px) {
+    .audit .section-title h2 {
+        margin-top: 25px;
+    }
+    .why-us .content {
+        padding-top: 30px;
+    }
+
+    .why-us .accordion-list {
+        padding-bottom: 30px;
+    }
+    .pricing .box {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+    }
+    .breadcrumbs {
+        margin-top: 68px;
+    }
+    .faded-title{
+        margin-bottom: 40px;
+    }
+
+    .tag{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .section-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 46px;
+        height: 4px;
+        background: #7396BC;
+        bottom: -5px;
+        right: calc(52%);
+    }
+    .homepage-blogs h3{
+        font-size: 20px;
+    }
+
     .faded-title h2 {
-        /*font-size: 3rem;*/
-        /*line-height: .6;*/
+        line-height: .6;
         padding-bottom: 10px;
         margin-bottom: 10px;
         margin-top: 5px;
@@ -2375,7 +2363,7 @@ input.nosubmit {
  .paragraph{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.04em;
 
 }
@@ -2402,6 +2390,9 @@ input.nosubmit {
 
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
+    .homepage-blogs .section-title h2::after {
+        right: calc(35%);
+    }
     .faded-title h2 {
         font-size: 120px;
     }
@@ -2413,9 +2404,12 @@ input.nosubmit {
         font-size: 90px;
     }
 }
-    @media screen and (max-width: 767.99px) {
+    @media screen and (max-width: 767px) {
         .faded-title h2 {
             font-size: 36px;
+        }
+        .homepage-blogs .section-title h2::after {
+            right: calc(21%);
         }
 
 }
