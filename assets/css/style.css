@@ -29,6 +29,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poppinsextralight';
+    src: url('/assets/fonts/poppins-thin-webfont.woff2') format('woff2'),
+    url('/assets/fonts/poppins-thin-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsthin';
+    src: url('/assets/fonts/poppins-thin-webfont.woff2') format('woff2'),
+    url('/assets/fonts/poppins-thin-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('/assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/poppins-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     /*font-family: 'Poppins', sans-serif;*/
@@ -1883,6 +1907,7 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 {
+    font-family: poppins-regular;
     margin: 10px 0 10px 0;
     padding: 5px 0 10px 0;
     line-height: 1;
@@ -1894,12 +1919,13 @@ section {
 #footer .footer-top .footer-contact p {
 
     margin-bottom: 0;
-    font-family: poppins, sans-serif;
+    /*font-family: poppins, sans-serif;*/
+    font-family: poppins-regular;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-align: justify;
+    text-align: left;
     letter-spacing: 0.03em;
     color: #2B2B2B;
 }
@@ -1909,7 +1935,6 @@ section {
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
-
     color: #ffffff;
     position: relative;
     padding-bottom: 12px;
