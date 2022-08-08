@@ -21,6 +21,10 @@
 /*    font-style: normal;*/
 /*}*/
 
+#footer ul {
+    font-family: 'Open Sans', sans-serif
+}
+
 @font-face {
     font-family: 'poppinsextrabold';
     src: url('/assets/fonts/poppins-black-webfont.woff2') format('woff2'),
@@ -234,10 +238,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 5px;
 }
 
-/*.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+ .navbar .active {
     color: #47b2e4;
     border-bottom: 3px solid #7396BC;
-}*/
+}
 
 .navbar .getstarted, .navbar .getstarted:focus {
     padding: 5px 20px;
@@ -503,9 +507,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-get-started {
     /*font-family: 'poppinsextrabold';*/
-    /*font-family: 'poppinsblack';*/
+    font-family: 'poppins-regular';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 45px 8px 45px;
@@ -580,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .hero h2 {
@@ -632,7 +636,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.13em;
     color: #EAECEB;
     font-size:164px;
-    line-height: .9;
+    line-height: .7;
 /*   padding-bottom: 30px;
     margin-bottom: 20px;*/
     text-align: center;
@@ -823,7 +827,7 @@ section {
 .why-us {
     background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
     color: #ffffff;
-    padding: unset !important;
+    /*padding: unset !important;*/
 }
 
 .why-us .section-title, .why-us .section-title h2 {
@@ -1040,7 +1044,7 @@ section {
 
 .audit .pricing .buy-btn {
     margin: 40px;
-    color: #2F0D53;
+    color: #86619C;
     border: 2px solid #2F0D53;
     font-weight: bold;
 }
@@ -1465,11 +1469,11 @@ section {
 .pricing .buy-btn {
     display: inline-block;
     padding: 5px 25px;
-    border-radius: 50px;
+    border-radius: 8px;
     color: #47b2e4;
     font-size: 16px;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: 'poppins-regular';
     transition: 0.3s;
     border: 1px solid #47b2e4;
 }
@@ -1920,7 +1924,8 @@ section {
 
     margin-bottom: 0;
     /*font-family: poppins, sans-serif;*/
-    font-family: poppins-regular;
+    /*font-family: poppins-regular;*/
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1970,7 +1975,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-    font-family: poppins, sans-serif;
+    /*font-family: poppins, sans-serif;*/
     color: #ffffff;
     transition: 0.3s;
     display: inline-block;
@@ -2044,6 +2049,8 @@ section {
 @media (max-width: 992px) {
     .audit .section-title h2 {
         margin-top: 25px;
+        font-size: 45px;
+    }
     }
     .why-us .content {
         padding-top: 30px;
@@ -2098,7 +2105,7 @@ section {
     .nav-main {
          padding: 0;
     }
-}
+
 
 @media (max-width: 760px) {
     .audit .section-title h2 {
@@ -2305,6 +2312,9 @@ input.nosubmit {
     font-size: 47px;
 }
 @media (max-width: 768px) {
+    .hero-slogan{
+        height: 40px;
+    }
     .navbar .getstarted, .navbar .getstarted:focus {
         border: unset;
     }
@@ -2354,7 +2364,7 @@ input.nosubmit {
     content: '';
     height: 40px;
     width: 100%;
-    border-bottom: solid 3px #7396BC;
+    /*border-bottom: solid 3px #7396BC;*/
     transition: left 250ms ease-in-out,right 250ms ease-in-out;
     opacity: 0;
 }
