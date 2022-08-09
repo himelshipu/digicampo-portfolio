@@ -5,7 +5,8 @@
     border-radius: 30px;
     /*padding: 10px;*/
 }
-
+.dropdown-menu {display:block; width: 100%;  }
+.dropdown-menu>li { display: block; }
 
 /*--------------------------------------------------------------
 # General
