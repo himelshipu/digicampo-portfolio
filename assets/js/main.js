@@ -1,6 +1,7 @@
 
 (function () {
   "use strict";
+  // Search Toggle
 
   /**
    * Easy selector helper function
@@ -276,5 +277,7 @@
       mirror: false
     });
   });
+
+
 
 })()

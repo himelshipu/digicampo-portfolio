@@ -8,6 +8,103 @@
 .dropdown-menu {display:block; width: 100%;  }
 .dropdown-menu>li { display: block; }
 
+/*searchbar*/
+.search {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+.form-control {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0;
+
+}
+
+.lnr-cross {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 3px;
+}
+
+
+ #search_input_box {
+    background: -webkit-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+    background: -moz-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+    background: -o-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+    background: linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
+
+     position: fixed;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%;
+     z-index: 999;
+     /*border-radius: 30px;*/
+ }
+
+ .search {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0; }
+
+#search_input_box { position: fixed;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    padding: 10px 20px;
+    }
+#search_input_box .form-control {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0; }
+#search_input_box .form-control:focus {
+    box-shadow: none;
+    outline: none; }
+#search_input_box input.placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+#search_input_box input:-moz-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+#search_input_box input::-moz-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+#search_input_box input::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+#search_input_box .btn {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0; }
+#search_input_box .lnr-cross {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 3px; }
+/*searchbar*/
+
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
