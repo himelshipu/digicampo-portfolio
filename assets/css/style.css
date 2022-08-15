@@ -631,11 +631,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #2F0D53;
 }
 
+.project-outline{
+    font-family: poppinsextrabold;
+    font-size: 45px !important;
+    line-height: unset !important;
+}
+
+.project-outline-sp{
+    color: #2F0D53; 
+    font-weight: bold; 
+    font-size: 43px
+}
+
 .btn-get-started {
     /*font-family: 'poppinsextrabold';*/
     /*font-family: 'poppins-regular';*/
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 45px 8px 45px;
