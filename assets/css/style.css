@@ -1204,14 +1204,14 @@ section {
 --------------------------------------------------------------*/
 
 .audit .section-title h2 {
-    /*font-family: poppins, sans-serif;*/
+    /*font-family: poppins, sans-serif;*/ 
     font-style: normal;
     letter-spacing: 0.03em;
     font-weight: 400 !important;
     font-size: 51px;
     line-height: 76px;
     margin-top: 45px;
-}
+} 
 
 .audit .section-title {
     padding-bottom: unset !important;
@@ -2346,7 +2346,7 @@ p {
 
 .faq-guide {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
     background-size: cover;
     color: #ffffff;

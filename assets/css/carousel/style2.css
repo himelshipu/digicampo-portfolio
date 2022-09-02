@@ -573,11 +573,17 @@ pre code {
     }
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
     }
 }
+    
+/*@media (min-width: 1200px) {*/
+/*    .container {*/
+/*        max-width: 1140px;*/
+/*    }*/
+/*}*/
 
 .container-fluid {
     width: 100%;
@@ -11560,7 +11566,7 @@ h1, h2, h3, h4, h5,
 
 .work .img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -11571,14 +11577,14 @@ h1, h2, h3, h4, h5,
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; 
     content: '';
     z-index: -1;
     background: rgba(134, 97, 156, 0.66);
 }
 
 .work .text {
-    padding: 35px;
+    padding: 25px;
     padding-top: 0;
 }
 
