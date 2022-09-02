@@ -11583,6 +11583,14 @@ h1, h2, h3, h4, h5,
     background: rgba(134, 97, 156, 0.66);
 }
 
+.page-section{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 84px;
+    letter-spacing: 0.02em;
+}
+
 .work .text {
     padding: 25px;
     padding-top: 0;
@@ -11625,4 +11633,8 @@ h1, h2, h3, h4, h5,
     z-index: -1;
     height: 30%;
     background: rgba(134, 97, 156, 0.66);
+}
+
+.libriCalson{
+    font-family: 'Libre Caslon Text' !important
 }
