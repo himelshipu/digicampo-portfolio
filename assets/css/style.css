@@ -354,6 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li {
     position: relative;
     margin-right: 40px;
+    /*text-transform: capitalize;*/
 }
 
 
@@ -466,16 +467,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 100%;
     visibility: visible;
-}
-
-@media (max-width: 1366px) {
-    .navbar .dropdown .dropdown ul {
-        left: -90%;
-    }
-
-    .navbar .dropdown .dropdown:hover > ul {
-        left: -100%;
-    }
 }
 
 /**
@@ -2239,6 +2230,54 @@ section {
     float: left;
 }
 
+.blog-content-title{
+    color: #2F0D53;
+    font-family: 'Libre Caslon Text' !important;
+}
+
+.blog-content-paragraph {
+    font-weight: 400;
+    font-size: 16px !important;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2B2B2B;
+}
+
+.blog-content-btn{
+    background: #7396BC;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    top: 1181.2px;
+}
+
+.blog-tag-btn{
+    border: 1px solid #494949;
+    border-radius: 5px;
+    color: #494949;
+    padding: 7px;
+}
+
+.share-icon{
+    color: #7396BC;
+    font-size: 20px;
+}
+
+.blog-content-btn:hover{
+    background: black;
+    color: white;
+}
+
+.blog-content-date {
+    font-weight: 600;
+    font-size: 18px !important;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #626262;
+}
+
 #footer .credits {
     float: right;
     font-size: 13px;
@@ -2355,7 +2394,7 @@ p {
 --------------------------------------------------------------*/
 .page-banner {
     width: 100%;
-    height: 50vh;
+    height: 57vh;
     /*background: #37517e;*/
     background: url(../img/service-banner.png) center no-repeat;
     background-size: cover;
@@ -2363,7 +2402,11 @@ p {
     /*text-align: center;*/
     /*position: relative;*/
 }
-    
+
+.page-banner-blog {
+    background: linear-gradient(rgba(43, 43, 43, 0.59), rgba(43, 43, 43, 0.59)),  url(../img/service-banner.png) fixed center;
+    background-size: cover;
+}
     
 /*.sub_div {*/
 /*  position: absolute;*/
@@ -2372,7 +2415,7 @@ p {
 
 .faq-guide {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     background: linear-gradient(89.8deg, #86619C -5.86%, #E3A0CF 107.39%);
     background-size: cover;
     color: #ffffff;
@@ -2444,6 +2487,16 @@ p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
+    font-size: 19.1527px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #2B2B2B;
+    display: block;
+    padding-bottom: 3px;
+}
+.side-category-name {
+    font-style: normal;
+    font-weight: 600;
     font-size: 19.1527px;
     line-height: 30px;
     letter-spacing: 0.04em;
@@ -2619,12 +2672,6 @@ input.nosubmit {
     content: none !important;
 }
 
-@media (min-width: 1024px) {
-    #header .nav-link {
-        padding: unset;
-    }
-}
-
 .open-sans {
     font-family: 'Open Sans', sans-serif !important;
 }
@@ -2710,6 +2757,22 @@ input.nosubmit {
     font-weight: 600;
 }
 
+/*Media Query Start*/
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover > ul {
+        left: -100%;
+    }
+}
+
+@media screen and (max-width: 1230px) and (min-width: 1024px) {
+    #header .nav-link {
+        padding: unset;
+    }
+}
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
     .homepage-blogs .section-title h2::after {
@@ -2719,7 +2782,6 @@ input.nosubmit {
     .faded-title h2 {
         font-size: 120px;
     }
-
 }
 
 @media screen and (max-width: 991.99px) and (min-width: 768px) {
@@ -2736,5 +2798,5 @@ input.nosubmit {
     .homepage-blogs .section-title h2::after {
         right: calc(21%);
     }
-
 }
+/*Media Query End*/

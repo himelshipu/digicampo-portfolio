@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">-->
     <!-- Favicons -->
     <link href="assets/img/logo.png" rel="icon">
     <link href="assets/img/logo.png" rel="apple-touch-icon">
@@ -35,15 +35,13 @@
 <!-- ======= Header ======= -->
 <header class="fixed-top " id="header">
     <div class="container d-flex align-items-center nav-main">
-
         <h1 class="logo me-auto"><a href="index.html">
             <img alt="" class="img-fluid animated" src="assets/img/logo.png">
         </a></h1>
-
         <nav class="navbar py-3" id="navbar">
             <ul>
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li class="dropdown"><a href="#"><span>What we do</span> </a>
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="dropdown"><a href="#"><span>Services</span> </a>
                     <ul>
                         <li class="dropdown"><a href="#"><span>Brand Building</span> <i class="bi bi-chevron-right"></i>
                         </a>
@@ -95,30 +93,43 @@
                     </ul>
                 </li>
                 <li><a class="nav-link " href="whoWe.html">Who we are</a></li>
-                <li><a class="nav-link   " href="blog.html">Blog</a></li>
-                <li class="dropdown active"><a href="#"><span>Resources</span> </a>
-                    <ul>
-                        <li><a href="eguides.html">Marketing e-Guides</a></li>
-                        <li><a href="faq.html">FAQ's </a></li>
-                    </ul>
-                </li>
+                <li><a class="nav-link   " href="blog.html">Our blog</a></li>
+                <li class="dropdown"><a href="#"><span>Resources</span> </a>
 
+                    <ul class="dropdown-menu">
+                        <div class="row">
+                            <li><a href="contact.html">Reach us</a></li>
+                            <li><a href="contactv2.html">Discuss a Partnership</a></li>
+                        </div>
+
+                    </ul>
+
+                </li>
                 <li class="dropdown"><a href="#"><span>Contact</span> </a>
                     <ul>
                         <li><a href="contact.html">Reach us</a></li>
                         <li><a href="contactv2.html">Discuss a Partnership</a></li>
                     </ul>
                 </li>
-
-                <li class=" search nav-link">
-                    <a class=" scrollto" href="#">
-                        <i class="bi bi-search"></i>
-                    </a>
+                <li class="search nav-link">
+                    <button class="search">
+                        <i class="bi bi-search" id="search"></i>
+                    </button>
                 </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle text-black"></i>
         </nav>
         <!-- .navbar -->
+    </div>
+
+    <div  class="search_input container" id="search_input_box">
+        <div >
+            <form class="d-flex justify-content-between">
+                <input class="form-control" id="search_input" placeholder="Search Here" type="text">
+                <button class="btn" type="submit"></button>
+                <i class="bi bi-x lnr-cross" id="close_search"></i>
+            </form>
+        </div>
     </div>
 </header>
 <!-- End Header -->
