@@ -2271,11 +2271,11 @@ section {
 
 .blog-content-date {
     font-weight: 600;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #626262;
+    color: #444444;
 }
 
 #footer .credits {
